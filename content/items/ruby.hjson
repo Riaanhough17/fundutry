@@ -1,0 +1,7 @@
+{
+  localizedName: "Ruby"
+  description: "A red gemstone."
+  color: "d92b3a"
+  hardness: 2
+  cost: 1
+}
