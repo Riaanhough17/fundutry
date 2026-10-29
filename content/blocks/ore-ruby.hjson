@@ -1,0 +1,8 @@
+type: OreBlock
+localizedName: Ruby ore
+itemDrop: ruby
+variants: 3
+oreDefault: true
+oreThreshold: 0.85
+oreScale: 25
+hardness: 3

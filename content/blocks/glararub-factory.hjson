@@ -1,0 +1,30 @@
+type: GenericCrafter
+localizedName: glarub Factory
+description: makes Glarub and out puts fried ruby becuse it fries the ruby with coal then ruby ato comes out in the factory then the factroy cools it with water then glarub is born
+category: crafting
+size: 2
+health: 4000
+craftTime: 40
+
+requirements: [
+    silicon/40
+    lead/100
+    sand/20
+    coal/31
+    ruby/200
+]
+
+consumes: {
+    items: [
+        ruby/2
+        coal/1
+    ]
+    power: 20
+    liquid: water/3
+}
+
+outputItems: [
+    glarub/2
+    friedruby/1
+]
+
