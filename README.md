@@ -1,1 +1,1 @@
-make dure to update the mod daily
+make sure to update the mod daily
