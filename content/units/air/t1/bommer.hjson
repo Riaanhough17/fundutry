@@ -1,0 +1,35 @@
+type: flying
+localizedName: Bommer
+description: drop booms good for daggers nad anyoing crux
+health: 400
+peed: 3.2
+accel: 0.1
+drag: 0.04
+flying: true
+hitSize: 8
+targetAir: false
+engineofset: 3
+enginesize: 0.5
+armour: 2
+weapons: [
+    {
+    x: 0
+    y: 0
+    shootY: 0
+    reload: 49
+    ignoreRotation: true
+    shootSound: shockBlast
+    bullet: {
+        type: BombBulletType
+        splashDamage: 50
+        splashDamageRadius: 15
+        collidesAir: false
+        sprite: shell
+        width: 2
+        height: 3
+        hitEffect: massiveExplosion
+        status: blasted
+        speed: 0
+    }
+    }
+]

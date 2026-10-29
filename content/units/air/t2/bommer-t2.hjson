@@ -1,0 +1,59 @@
+type: flying
+localizedName: Bommer t2
+description:tier two of this bommer
+health: 1000
+speed: 2.1
+accel: 0.2
+drag: 0.06
+flying: true
+hitSize: 16
+targetAir: false
+engineofset: 12
+enginesize: 12
+armour: 9
+weapons: [
+    {
+    x: 4
+    y: -5
+    shootY: 0
+    reload: 42
+    ignoreRotation: true
+    shootSound: shockBlast
+    bullet: {
+        type: BombBulletType
+        splashDamage: 64
+        splashDamageRadius: 17
+        collidesAir: false
+        sprite: shell
+        width: 3
+        height: 5
+        hitEffect: massiveExplosion
+        status: blasted
+        speed: 0
+        shootEffect: flakExplosionBig
+    }
+    }
+]
+weapons: [
+    {
+    x: -4
+    y: -5
+    shootY: 0
+    reload: 42
+    ignoreRotation: true
+    shootSound: shockBlast
+    bullet: {
+        type: BombBulletType
+        splashDamage: 64
+        splashDamageRadius: 17
+        collidesAir: false
+        sprite: shell
+        width: 3
+        height: 5
+        hitEffect: massiveExplosion
+        status: blasted
+        speed: 0
+        shootEffect: flakExplosionBig
+    }
+    }
+]
