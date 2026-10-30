@@ -1,0 +1,686 @@
+type: flying
+localizedName: Black Hole Bomber
+description: tier three, drops big black holes that pull enemies in and blow them up
+health: 2200
+speed: 1.7
+accel: 0.1
+drag: 0.04
+flying: true
+hitSize: 24
+targetAir: false
+engineOffset: 7
+engineSize: 3
+weapons: [
+    {
+    x: 0
+    y: 0
+    shootY: 0
+    reload: 200
+    ignoreRotation: true
+    mirror: false
+    shootCone: 180
+    shootSound: payloadDrop3
+    bullet: {
+        type: BasicBulletType
+        keepVelocity: false
+        speed: 0
+        lifetime: 360
+        damage: 4
+        pierce: true
+        pierceBuilding: true
+        pierceCap: 150
+        collidesTiles: false
+        collidesAir: false
+        absorbable: false
+        hittable: false
+        knockback: -2.5
+        hitSize: 60
+        width: 64
+        height: 64
+        sprite: fundutry-holebullet
+        backColor: ffffff
+        frontColor: ffffff
+        hitEffect: none
+        despawnEffect: {
+            type: MultiEffect
+            effects: [
+                titanExplosionLarge
+                {
+                    type: WaveEffect
+                    lifetime: 20
+                    sizeFrom: 4
+                    sizeTo: 40
+                    strokeFrom: 3
+                    strokeTo: 0
+                    colorFrom: d9b8ff
+                    colorTo: 7b2fd6
+                }
+                {
+                    type: WaveEffect
+                    lifetime: 24
+                    sizeFrom: 4
+                    sizeTo: 52
+                    strokeFrom: 3
+                    strokeTo: 0
+                    colorFrom: b57bff
+                    colorTo: 5b1d9a
+                }
+                {
+                    type: WaveEffect
+                    lifetime: 28
+                    sizeFrom: 4
+                    sizeTo: 64
+                    strokeFrom: 3
+                    strokeTo: 0
+                    colorFrom: 9d4dff
+                    colorTo: ffffff
+                }
+                {
+                    type: WaveEffect
+                    lifetime: 32
+                    sizeFrom: 4
+                    sizeTo: 76
+                    strokeFrom: 3
+                    strokeTo: 0
+                    colorFrom: 7b2fd6
+                    colorTo: ff7bd5
+                }
+                {
+                    type: WaveEffect
+                    lifetime: 36
+                    sizeFrom: 4
+                    sizeTo: 88
+                    strokeFrom: 3
+                    strokeTo: 0
+                    colorFrom: 5b1d9a
+                    colorTo: 7bd5ff
+                }
+                {
+                    type: WaveEffect
+                    lifetime: 40
+                    sizeFrom: 4
+                    sizeTo: 100
+                    strokeFrom: 3
+                    strokeTo: 0
+                    colorFrom: ffffff
+                    colorTo: d9b8ff
+                }
+                {
+                    type: WaveEffect
+                    lifetime: 44
+                    sizeFrom: 4
+                    sizeTo: 112
+                    strokeFrom: 3
+                    strokeTo: 0
+                    colorFrom: ff7bd5
+                    colorTo: b57bff
+                }
+                {
+                    type: WaveEffect
+                    lifetime: 48
+                    sizeFrom: 4
+                    sizeTo: 124
+                    strokeFrom: 3
+                    strokeTo: 0
+                    colorFrom: 7bd5ff
+                    colorTo: 9d4dff
+                }
+                {
+                    type: WaveEffect
+                    lifetime: 52
+                    sizeFrom: 4
+                    sizeTo: 136
+                    strokeFrom: 3
+                    strokeTo: 0
+                    colorFrom: d9b8ff
+                    colorTo: 7b2fd6
+                }
+                {
+                    type: WaveEffect
+                    lifetime: 56
+                    sizeFrom: 4
+                    sizeTo: 148
+                    strokeFrom: 3
+                    strokeTo: 0
+                    colorFrom: b57bff
+                    colorTo: 5b1d9a
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 40
+                    length: 30
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: d9b8ff
+                    colorTo: 5b1d9a
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 43
+                    length: 36
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: b57bff
+                    colorTo: ffffff
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 46
+                    length: 42
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: 9d4dff
+                    colorTo: ff7bd5
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 49
+                    length: 48
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: 7b2fd6
+                    colorTo: 7bd5ff
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 52
+                    length: 54
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: 5b1d9a
+                    colorTo: d9b8ff
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 55
+                    length: 60
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: ffffff
+                    colorTo: b57bff
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 58
+                    length: 66
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: ff7bd5
+                    colorTo: 9d4dff
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 61
+                    length: 72
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: 7bd5ff
+                    colorTo: 7b2fd6
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 64
+                    length: 78
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: d9b8ff
+                    colorTo: 5b1d9a
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 67
+                    length: 84
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: b57bff
+                    colorTo: ffffff
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 70
+                    length: 90
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: 9d4dff
+                    colorTo: ff7bd5
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 73
+                    length: 96
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: 7b2fd6
+                    colorTo: 7bd5ff
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 76
+                    length: 102
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: 5b1d9a
+                    colorTo: d9b8ff
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 79
+                    length: 108
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: ffffff
+                    colorTo: b57bff
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 82
+                    length: 114
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: ff7bd5
+                    colorTo: 9d4dff
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 85
+                    length: 120
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: 7bd5ff
+                    colorTo: 7b2fd6
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 88
+                    length: 126
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: d9b8ff
+                    colorTo: 5b1d9a
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 91
+                    length: 132
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: b57bff
+                    colorTo: ffffff
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 94
+                    length: 138
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: 9d4dff
+                    colorTo: ff7bd5
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    lifetime: 97
+                    length: 144
+                    baseLength: 5
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: 7b2fd6
+                    colorTo: 7bd5ff
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 30
+                    length: 40
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: b57bff
+                    colorTo: ffffff
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 32
+                    length: 48
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: 9d4dff
+                    colorTo: ff7bd5
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 34
+                    length: 56
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: 7b2fd6
+                    colorTo: 7bd5ff
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 36
+                    length: 64
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: 5b1d9a
+                    colorTo: d9b8ff
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 38
+                    length: 72
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: ffffff
+                    colorTo: b57bff
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 40
+                    length: 80
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: ff7bd5
+                    colorTo: 9d4dff
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 42
+                    length: 88
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: 7bd5ff
+                    colorTo: 7b2fd6
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 44
+                    length: 96
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: d9b8ff
+                    colorTo: 5b1d9a
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 46
+                    length: 104
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: b57bff
+                    colorTo: ffffff
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 48
+                    length: 112
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: 9d4dff
+                    colorTo: ff7bd5
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 50
+                    length: 120
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: 7b2fd6
+                    colorTo: 7bd5ff
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 52
+                    length: 128
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: 5b1d9a
+                    colorTo: d9b8ff
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 54
+                    length: 136
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: ffffff
+                    colorTo: b57bff
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 56
+                    length: 144
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: ff7bd5
+                    colorTo: 9d4dff
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 58
+                    length: 152
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: 7bd5ff
+                    colorTo: 7b2fd6
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 60
+                    length: 160
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: d9b8ff
+                    colorTo: 5b1d9a
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 62
+                    length: 168
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: b57bff
+                    colorTo: ffffff
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 64
+                    length: 176
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: 9d4dff
+                    colorTo: ff7bd5
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 66
+                    length: 184
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: 7b2fd6
+                    colorTo: 7bd5ff
+                }
+                {
+                    type: ParticleEffect
+                    line: true
+                    particles: 4
+                    lifetime: 68
+                    length: 192
+                    baseLength: 6
+                    strokeFrom: 2
+                    strokeTo: 0
+                    lenFrom: 8
+                    lenTo: 2
+                    colorFrom: 5b1d9a
+                    colorTo: d9b8ff
+                }
+            ]
+        }
+        despawnSound: explosionTitan
+        shootEffect: shockwaveSmaller
+        smokeEffect: smokeCloud
+        hitSound: none
+        splashDamage: 160
+        splashDamageRadius: 56
+        status: blasted
+        spin: 6
+        despawnShake: 12
+        hitShake: 0
+        lightning: 6
+        lightningLength: 14
+        lightningDamage: 30
+        lightningColor: b57bff
+        trailInterval: 2
+        trailEffect: {
+            type: ParticleEffect
+            particles: 2
+            lifetime: 40
+            length: 28
+            baseLength: 8
+            sizeFrom: 3
+            sizeTo: 0
+            colorFrom: d9b8ff
+            colorTo: 5b1d9a
+        }
+        bulletInterval: 10
+        intervalBullet: {
+            type: LightningBulletType
+            damage: 25
+            lightningLength: 16
+            lightningColor: b57bff
+            collidesAir: false
+        }
+    }
+    }
+]
